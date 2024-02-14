@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Run1" verbose="1" parallel="tests" thread-count="3"
+	configfailurepolicy="continue">
+
+
+
+
+	<test name="Runner 1" annotations="JDK" preserve-order="true">
+		<parameter name="tags" value="not @42" />
+		<classes>
+			<class name="com.zensar.runner.ConcludeExecution" />
+		</classes>
+	</test>
+	<test name="Runner 2" annotations="JDK" preserve-order="true">
+		<parameter name="tags" value="not @42" />
+		<classes>
+			<class name="com.zensar.runner.Debugger" />
+		</classes>
+	</test>
+	<test name="Runner 4" annotations="JDK" preserve-order="true">
+		<parameter name="tags" value="not @42" />
+		<classes>
+			<class name="com.zensar.runner.InitializeExecution" />
+		</classes>
+	</test>
+	<test name="Runner 5" annotations="JDK" preserve-order="true">
+		<parameter name="tags" value="not @42" />
+		<classes>
+			<class name="com.zensar.runner.AmazonLogin" />
+		</classes>
+	</test>
+	<test name="Runner 6" annotations="JDK" preserve-order="true">
+		<parameter name="tags" value="not @42" />
+		<classes>
+			<class name="com.zensar.runner.TestRunner1" />
+		</classes>
+	</test>
+	<test name="Runner 7" annotations="JDK" preserve-order="true">
+		<parameter name="tags" value="not @42" />
+		<classes>
+			<class name="com.zensar.runner.TestRunner2" />
+		</classes>
+	</test>
+	<test name="Runner 8" annotations="JDK" preserve-order="true">
+		<parameter name="tags" value="not @42" />
+		<classes>
+			<class name="com.zensar.runner.TestRunner3" />
+		</classes>
+	</test>
+	   
+</suite>
+ 
+ 
+ 
